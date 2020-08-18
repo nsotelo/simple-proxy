@@ -7,7 +7,7 @@ import select
 import socket
 
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 # Changing the buffer_size and delay, you can improve the speed and bandwidth.
 # But if the buffer is too large or the delay is too low, things can break.
@@ -157,4 +157,5 @@ class Server:
 
 
 if __name__ == "__main__":
+    # This is just some proxy I included from here http://spys.one/en/http-proxy-list/
     Server("163.172.222.64", 5836).run()
